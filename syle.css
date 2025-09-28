@@ -1,0 +1,369 @@
+.quiz-btn {
+  background: #4f46e5;
+  color: #fff;
+  font-family: 'Segoe UI Rounded', 'Quicksand', 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  margin: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+}
+.quiz-btn:hover {
+  background: #6366f1;
+  transform: scale(1.08);
+}
+.quiz-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(44, 62, 80, 0.98);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  animation: fadeIn 0.7s;
+}
+.quiz-content {
+  background: rgba(255,255,255,0.85);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(44,62,80,0.12);
+  padding: 2rem 2.5rem;
+  min-width: 320px;
+  max-width: 400px;
+  text-align: center;
+  max-height: 90vh;
+  overflow-y: auto;
+  backdrop-filter: blur(8px);
+  border: 2px solid #b6f7c1;
+}
+.quiz-content h2 {
+  color: #4f46e5;
+  margin-bottom: 1rem;
+}
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 6px;
+  border: 1px solid #b6f7c1;
+  font-size: 1rem;
+}
+#workout-result {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #22223b;
+  font-weight: 500;
+}
+.logo-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #b6f7c1;
+}
+/* Loading screen styles */
+#loading-screen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #2c3e50;
+  color: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s;
+}
+.loader-content {
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.loader-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.loader-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.loader-content li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+.loader-spinner {
+  margin: 1.5rem auto 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 6px solid #fff;
+  border-top: 6px solid #4f46e5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+footer {
+  width: 100%;
+  background: linear-gradient(90deg, #aeefff, #b6f7c1, #222);
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+.contact-btn {
+  display: inline-block;
+  background: #000000;
+  color: #fff;
+  font-family: 'Segoe UI Rounded', 'Quicksand', 'Montserrat', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  margin: 0 auto;
+  transition: background 0.2s, transform 0.2s;
+}
+.contact-btn:hover {
+  background: #4f46e5;
+  transform: scale(1.08);
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 0;
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  color: #22223b;
+}
+#workout-section {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44,62,80,0.12);
+  padding: 32px 24px;
+  animation: fadeIn 1s;
+  min-height: 60vh;
+  backdrop-filter: blur(8px);
+  border: 2px solid #b6f7c1;
+}
+
+
+.header-bg {
+  background: rgba(99,102,241,0.18);
+  padding: 2rem 0 1rem 0;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 4px 24px rgba(99,102,241,0.12);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+.animated-title {
+  animation: bounce 1.5s infinite alternate;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-12px); }
+}
+.subtitle {
+  font-size: 1.25rem;
+}
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+.card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(44,62,80,0.12);
+  padding: 1.5rem 2rem;
+  min-width: 220px;
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(6px);
+  border: 2px solid #b6f7c1;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: 0 16px 48px rgba(44,62,80,0.18);
+  border: 2px solid #4f46e5;
+}
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #4f46e5;
+}
+.card p {
+  font-size: 1rem;
+  color: #22223b;
+}
+.footer {
+  background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  font-size: 1.1rem;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: 0 -2px 16px rgba(44,62,80,0.12);
+  margin-top: auto;
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  gap: 2rem;
+  box-shadow: 0 8px 32px rgba(44,62,80,0.10);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.85);
+  border: 2px solid #b6f7c1;
+}
+/* .BWE-btn, .WTE-btn extra styles moved to their classes above */
+/* .BWE-btn:hover, .WTE-btn:hover extra styles moved to their classes above */
+/* .quiz-modal extra styles moved to its class above */
+/* .quiz-content extra styles moved to its class above */
+/* .quiz-btn extra styles moved to its class above */
+/* .quiz-btn:hover extra styles moved to its class above */
+/* .contact-btn extra styles moved to its class above */
+/* .contact-btn:hover extra styles moved to its class above */
+/* Remove stray closing brace */
+.BWE-btn {
+  text-decoration: none;
+  width: 170px;
+  height: 150px;
+  background-image: url('https://www.bing.com/th/id/OIP.9bIyy52nYzV6Rbf_CnK9kQHaE8?w=255&h=211&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI Rounded', 'Quicksand', 'Montserrat', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.6), 0 1px 0 #b6f7c1;
+  overflow: hidden;
+  transition: transform 0.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform: scale(1);
+  line-height: 1.2;
+  padding: 0;
+  box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+  backdrop-filter: blur(6px);
+  border: 2px solid #b6f7c1;
+}
+.BWE-btn:hover {
+  transform: scale(1.12) rotate(-2deg);
+  box-shadow: 0 16px 48px rgba(44,62,80,0.22);
+  border: 2px solid #4f46e5;
+}
+.WTE-btn {
+  text-decoration: none;
+  width: 170px;
+  height: 150px;
+  background-image: url('https://www.bing.com/th/id/OIP.3YQU7Fvnm6WDvorRsbQJ6QHaEe?w=240&h=211&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI Rounded', 'Quicksand', 'Montserrat', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.6), 0 1px 0 #b6f7c1;
+  overflow: hidden;
+  transition: transform 0.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform: scale(1);
+  line-height: 1.2;
+  padding: 0;
+  box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+  backdrop-filter: blur(6px);
+  border: 2px solid #b6f7c1;
+}
+.Title {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #4f46e5 0%, #b6f7c1 50%, #fc4a1a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: 2rem 0 1.5rem 0;
+  font-weight: 800;
+  letter-spacing: 2px;
+  animation: bounce 2s infinite alternate;
+  text-shadow: 0 2px 8px rgba(44,62,80,0.12);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 700px) {
+  .button-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 95vw;
+    box-shadow: none;
+    border-radius: 0;
+    background: none;
+    border: none;
+    backdrop-filter: none;
+  }
+  .BWE-btn, .WTE-btn {
+    width: 90vw;
+    height: 120px;
+    font-size: 1.2rem;
+  }
+  .Title {
+    font-size: 2rem;
+  }
+  .quiz-content {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+  }
+  .card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+  }
+  #workout-section {
+    padding: 1rem 0.5rem;
+  }
+}

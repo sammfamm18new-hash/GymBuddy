@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gym Buddy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="syle.css">
+    <script src="backend.js"></script>
+</head>
+<body>
+            <header>
+                <img src="https://th.bing.com/th/id/OIP.Zwue73m8qEuAPL8RSWPjxwHaHa?w=178&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" alt="Gym Buddy Logo" class="logo-img" />
+                <h1 class="Title">Welcome To Gym Buddy</h1>
+            </header>
+            <div class="button-row">
+                    <a href="#" class="BWE-btn" id="bwe-link">Body Weight Excersize</a>
+                    <a href="#" class="WTE-btn" id="wte-link">Weight Training Excersize</a>
+            </div>
+            <main>
+                    <section>
+                        <div id="quiz-modal" class="quiz-modal" style="display:none;">
+                            <div class="quiz-content">
+                                <div id="quiz-timer" style="font-size:1.2rem;color:#fc4a1a;font-weight:bold;margin-bottom:1rem;display:none;"></div>
+                                <h2>Custom Workout Quiz</h2>
+                                <form id="quiz-form">
+                                    <label>Are you lazy?</label><br>
+                                    <select name="lazy" required>
+                                        <option value="">Choose...</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select><br><br>
+                                    <label>How hard do you want your workout?</label><br>
+                                    <select name="difficulty" id="difficulty" required>
+                                        <option value="">Choose...</option>
+                                        <option value="easy">Easy</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="hard">Hard</option>
+                                    </select><br><br>
+                                    <label>How long are you willing to workout?</label><br>
+                                    <select name="duration" required>
+                                        <option value="">Choose...</option>
+                                        <option value="15">15 minutes</option>
+                                        <option value="30">30 minutes</option>
+                                        <option value="45">45 minutes</option>
+                                        <option value="60">1 hour</option>
+                                    </select><br><br>
+                                    <label>Is it Leg Day, Push, Pull, or Abs?</label><br>
+                                    <select name="dayType" id="day-type" required>
+                                        <option value="">Choose...</option>
+                                        <option value="Leg">Leg Day</option>
+                                        <option value="Push">Push</option>
+                                        <option value="Pull">Pull</option>
+                                        <option value="Abs">Abs</option>
+                                    </select><br><br>
+                                    <label>Workout Type:</label><br>
+                                    <select name="type" id="workout-type" required>
+                                        <option value="">Choose...</option>
+                                        <option value="bwe">Body Weight Exercise</option>
+                                        <option value="wte">Weight Training Exercise</option>
+                                    </select><br><br>
+                                    <div id="tools-section" style="display:none;">
+                                        <label>What tools do you have?</label><br>
+                                        <div id="tools-checkboxes">
+                                            <label><input type="checkbox" name="tools" value="none"> None</label><br>
+                                            <label><input type="checkbox" name="tools" value="dumbbells"> Dumbbells</label><br>
+                                            <label><input type="checkbox" name="tools" value="barbell"> Barbell</label><br>
+                                            <label><input type="checkbox" name="tools" value="kettlebell"> Kettlebell</label><br>
+                                            <label><input type="checkbox" name="tools" value="resistance_band"> Resistance Bands</label><br>
+                                            <label><input type="checkbox" name="tools" value="bench"> Bench</label><br>
+                                            <label><input type="checkbox" name="tools" value="pull-up bar"> Pull-up Bar</label><br>
+                                            <label><input type="checkbox" name="tools" value="medicine ball"> Medicine Ball</label><br>
+                                            <label><input type="checkbox" name="tools" value="trx"> TRX Suspension</label><br>
+                                            <label><input type="checkbox" name="tools" value="jump rope"> Jump Rope</label><br>
+                                            <label><input type="checkbox" name="tools" value="foam roller"> Foam Roller</label><br>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <button type="submit" class="quiz-btn">Get My Workout</button>
+                                    <button type="button" id="close-quiz" class="quiz-btn">Cancel</button>
+                                </form>
+                                <div id="workout-result"></div>
+                            </div>
+                        </div>
+                    </section>
+            </main>
+            <footer>
+                                        <a href="mailto:sammfamm18new@gmail.com" class="contact-btn">Contact Me</a>
+                </footer>
+</body>
+</html>
