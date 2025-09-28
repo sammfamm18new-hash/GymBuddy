@@ -373,6 +373,7 @@ body {
   gap: 6px;
   padding: 10px;
   overflow-x: auto; /* allows horizontal scroll if needed */
+
 }
 
 .photo-grid img {
@@ -380,5 +381,13 @@ body {
   height: 60px;
   object-fit: cover;
   border-radius: 4px;
+  transition: transform 0.3s ease;
+
 }
 
+.photo-grid img:hover{
+transform: scale(1.5);
+z-index: 1;
+  
+  
+}
