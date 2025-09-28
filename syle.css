@@ -368,14 +368,17 @@ body {
   }
 }
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 6px;
   padding: 10px;
+  overflow-x: auto; /* allows horizontal scroll if needed */
 }
+
 .photo-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
+  border-radius: 4px;
 }
+
