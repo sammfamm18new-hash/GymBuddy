@@ -367,5 +367,18 @@ body {
     padding: 1rem 0.5rem;
   }
 }
+.photo-grid {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  overflow-x: auto; /* allows horizontal scroll if needed */
+}
 
+.photo-grid img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
 
