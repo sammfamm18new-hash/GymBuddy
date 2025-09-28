@@ -370,15 +370,15 @@ body {
 .photo-grid {
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 3px;
   padding: 10px;
   overflow-x: auto; /* allows horizontal scroll if needed */
 
 }
 
 .photo-grid img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 4px;
   transition: transform 0.3s ease;
@@ -391,3 +391,18 @@ z-index: 1;
   
   
 }
+.motivation-photos-text {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #4f46e5 0%, #b6f7c1 50%, #fc4a1a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: 2rem 0 1.5rem 0;
+  font-weight: 800;
+  letter-spacing: 2px;
+  animation: bounce 2s infinite alternate;
+  text-shadow: 0 2px 8px rgba(44,62,80,0.12);
+}
+
