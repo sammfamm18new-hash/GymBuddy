@@ -369,14 +369,13 @@ body {
 }
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  max-width: 900px;
-  margin: 2rem auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 10px;
 }
 .photo-grid img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 6px;
   object-fit: cover;
 }
