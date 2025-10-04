@@ -1,3 +1,13 @@
+/* For screens wider than 768px */
+@media (min-width: 768px) {
+  /* Adjust styles for larger screens */
+  .workout-card {
+    display: inline-block;
+    width: 45%;
+    margin: 2%;
+  }
+}
+
 .quiz-btn {
   background: #4f46e5;
   color: #fff;
