@@ -1,3 +1,26 @@
+.workout-card {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.workout-card:hover {
+  transform: translateY(-5px);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.workout-card {
+  flex: 1 1 45%;
+  margin: 10px;
+}
+
 /* For screens wider than 768px */
 @media (min-width: 768px) {
   /* Adjust styles for larger screens */
